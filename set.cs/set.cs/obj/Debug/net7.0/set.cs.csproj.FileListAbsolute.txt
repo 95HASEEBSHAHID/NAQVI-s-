@@ -1,0 +1,4 @@
+C:\Users\asp\Desktop\HASEEB SHAHID (PLEASE DON'T DELETE) {OK YOUR REQUEST IS ACCEPTED}\set.cs\set.cs\obj\Debug\net7.0\set.cs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asp\Desktop\HASEEB SHAHID (PLEASE DON'T DELETE) {OK YOUR REQUEST IS ACCEPTED}\set.cs\set.cs\obj\Debug\net7.0\set.cs.AssemblyInfoInputs.cache
+C:\Users\asp\Desktop\HASEEB SHAHID (PLEASE DON'T DELETE) {OK YOUR REQUEST IS ACCEPTED}\set.cs\set.cs\obj\Debug\net7.0\set.cs.AssemblyInfo.cs
+C:\Users\asp\Desktop\HASEEB SHAHID (PLEASE DON'T DELETE) {OK YOUR REQUEST IS ACCEPTED}\set.cs\set.cs\obj\Debug\net7.0\set.cs.csproj.CoreCompileInputs.cache

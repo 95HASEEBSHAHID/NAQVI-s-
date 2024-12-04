@@ -1,0 +1,340 @@
+﻿@{
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="~/Content/css/style.css">
+</head>
+<body>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Navigation */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+            nav ul li {
+                margin: 0 15px;
+            }
+
+                nav ul li a {
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 16px;
+                }
+
+                    nav ul li a:hover {
+                        text-decoration: underline;
+                    }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #282c34;
+            color: #fff;
+        }
+
+            .hero h1 {
+                font-size: 3em;
+                margin-bottom: 20px;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+                margin-bottom: 20px;
+            }
+
+            .hero .btn {
+                background-color: #ff6347;
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+
+                .hero .btn:hover {
+                    background-color: #e5533b;
+                }
+
+        /* Featured Products */
+        .featured {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            padding: 20px;
+            margin: 15px;
+            width: 250px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+            .product-card:hover {
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+                transform: translateY(-10px);
+            }
+
+            .product-card img {
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+                object-fit: cover;
+            }
+
+            .product-card h3 {
+                font-size: 1.5em;
+                margin: 10px 0;
+            }
+
+            .product-card p {
+                font-size: 1.2em;
+                color: #ff6347;
+            }
+
+            .product-card .btn {
+                background-color: #333;
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+                margin-top: 10px;
+                display: inline-block;
+            }
+
+                .product-card .btn:hover {
+                    background-color: #444;
+                }
+
+        /* Order Form */
+        .order-form {
+            padding: 30px;
+            background-color: #fff;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+            .order-form label {
+                display: block;
+                margin: 10px 0 5px;
+            }
+
+            .order-form input,
+            .order-form select,
+            .order-form textarea {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0 20px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+
+            .order-form .btn {
+                background-color: #ff6347;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                border: none;
+            }
+
+                .order-form .btn:hover {
+                    background-color: #e5533b;
+                }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 50px;
+        }
+
+        /* Product Images Section */
+        .product-images {
+            display: flex;
+            justify-content: center;
+            margin: 50px 0;
+        }
+
+            .product-images img {
+                width: 200px;
+                margin: 0 15px;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease;
+            }
+
+                .product-images img:hover {
+                    transform: scale(1.05);
+                    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+                }
+
+        /* Responsive Design */
+
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        .hero .btn {
+            font-size: 1.2em;
+        }
+
+        .product-card {
+            width: 220px;
+        }
+
+        .order-form {
+            width: 90%;
+        }
+
+        }
+
+
+
+        .hero p {
+            font-size: 1.1em;
+        }
+
+        .featured {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .product-card {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .hero .btn {
+            font-size: 1.2em;
+        }
+
+        .order-form {
+            width: 90%;
+        }
+
+        .product-images {
+            flex-direction: column;
+            align-items: center;
+        }
+
+            .product-images img {
+                width: 80%;
+                margin: 10px 0;
+            }
+
+        }
+
+
+
+        nav ul {
+            flex-direction: column;
+        }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+        .hero h1 {
+            font-size: 1.8em;
+        }
+
+        .hero p {
+            font-size: 1em;
+        }
+
+        .hero .btn {
+            font-size: 1em;
+        }
+
+        .product-card {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .footer {
+            font-size: 0.9em;
+        }
+        }
+    </style>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                <li><a href="@Url.Action("Products", "Home")">Products</a></li>
+                <li><a href="@Url.Action("Order", "Home")">Order</a></li>
+                <li><a href="@Url.Action("About", "Home")">About</a></li>
+                <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to Our Online Store</h1>
+            <p>Your one-stop shop for all the best products!</p>
+            <a href="@Url.Action("Products", "Home")" class="btn">Shop Now</a>
+        </section>
+
+        <section class="featured">
+            <h2>Featured Products</h2>
+            <div class="product-card">
+                <img src="https://unze.com.pk/cdn/shop/files/gs8477.jpg?v=1729142543" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$19.99</p>
+                <a href="@Url.Action("Order", "Home")" class="btn">Order Now</a>
+            </div>
+            <div class="product-card">
+                <img src="https://unze.com.pk/cdn/shop/files/gs9067_9bbaba7e-5436-4e38-b9dc-a7cd1f754b60.jpg?v=1728561461" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$29.99</p>
+                <a href="@Url.Action("Order", "Home")" class="btn">Order Now</a>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="~/Scripts/js/script.js"></script>
+</body>
+</html>
